@@ -1,0 +1,79 @@
+<div class="container-fluid page_footer">
+
+  <footer class="container page_footer pt-5">
+    <section class=" ">
+      <div class="row">
+        <div class="col-md-3"><img src="images/logo.png" width="200" alt="Logo2" class="img-fluid"> <small
+            class="d-block  text-white ">Have questions or need additional help?</small> <small
+            class="d-block text-white">Give us a call at
+            <small class="fw-bold text-white">
+              (+91) 916-326-7509</small></small></div>
+        <div class="col-md-3 mt-4 mt-md-0">
+          <h5 class=" text-uppercase fw-bold">Quick Links</h5>
+          <ul class="list-unstyled mt-3 lh-lg">
+            <li><a href="/" class="">Home</a></li>
+            <li><a href="/#" class="">About Us</a></li>
+            <li><a href="/contact" class="">Contact Us</a></li>
+            <li><a href="#" class="">Blog</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 mt-4 mt-md-0">
+          <h5 class=" text-uppercase fw-bold">Services</h5>
+          <ul class="list-unstyled mt-3 lh-lg">
+            <li><a href="/#" class="">SEO</a></li>
+            <li><a href="/#" class="">Social Media Marketing</a></li>
+            <li><a href="/#" class="">Ecommerce </a></li>
+            <li><a href="#">Web Design</a></li>
+          </ul>
+        </div>
+
+
+
+
+        <div class="col-md-3 mt-4 mt-md-0">
+          <h5 class="text-uppercase fw-bold">Get in Touch</h5>
+          <ul class="list-unstyled mt-3 lh-lg">
+            <li><a href="#">Terms & Conditions</a></li>
+            <li><a href="#">Privacy Policies</a></li>
+            <li><a href="">Careers</a></li>
+            <li><a href="" target="_blank"><i class="fab fa-facebook "></i></a> <a href="" target="_blank"><i
+                  class="fab fa-instagram "></i></a>
+              <a href=""><i class="fas fa-phone"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i>
+            </a>
+            <a href=""><i class="fab fa-whatsapp"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <hr class="text-white mx-md-5">
+    <section class="text-center copyright pb-3"><small class="">©
+        2024 Copyright: <a href="/" aria-current="page" class="">Piweb Technology</a> </small></section>
+
+  </footer>
+
+</div>
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<script>
+
+function get_action(form) 
+{
+    var v = grecaptcha.getResponse();
+    if(v.length == 0)
+    {
+        document.getElementById('captcha').innerHTML="You can't leave Captcha Code empty";
+        return false;
+    }
+    else
+    {
+         document.getElementById('captcha').innerHTML="Captcha completed";
+        return true; 
+    }
+}
+
+</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.js"></script>
+</body>
+
+</html>

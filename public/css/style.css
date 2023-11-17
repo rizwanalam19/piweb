@@ -1,0 +1,115 @@
+.header-logo{
+  width: 20%;
+}
+.nav-link{
+  font-size: 14px;
+  color: #861b1b !important;
+
+} 
+.service-content {
+  font-size: 12px;
+  color: black;
+}
+.main-banner-content{
+  word-spacing: 6px;
+  line-height: 1.8;
+}
+.divider {
+  width: 4%;
+  height: 3px;
+  padding: 0;
+  margin: 10px auto 0 0;
+  margin-left: auto;
+  background: #d12d2d;
+  border: none;
+}
+
+.card-service-images {
+  width: 35%;
+}
+.how-we-do-it {
+  width: 50%;
+}
+.parallax1 {
+background-image: linear-gradient(
+        rgba(63, 19, 48, 0.9),
+      rgba(0, 1, 0, 0.9),
+      rgba(0, 11, 12, 0.9)
+    ),
+    url(../images/meeting-room.jpeg);
+
+  height: 450px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  z-index: -99;
+}
+
+.backgrnd-images {
+  background-image: linear-gradient(
+      rgba(63, 19, 48, 0.9),
+      rgba(0, 1, 0, 0.9),
+      rgba(0, 11, 12, 0.9)
+    ),
+    url("../images/job.jpg");
+
+  background-position: auto;
+  background-repeat: no-repeat, repeat;
+  background-color: #000;
+}
+
+.page_footer {
+  background-color: #520707;
+}
+footer section div ul li a, .copyright a, .copyright small{
+  color: aliceblue;
+  font-weight: bold;
+}
+footer section div ul li a:hover{
+  color: #daafaf;
+  transition: 0.6s;
+}
+
+footer h5{
+  color: #dd8888;
+}
+
+footer div ul li i{
+  padding: 8px 8px;
+}
+
+/*    About us     */
+.about-content{
+  word-spacing: 10px;
+}
+.about-card{
+margin-bottom: 50px;
+background-color: #dd8888;
+
+}
+.proposal-btn{
+  border-radius: 20px;
+}
+
+.illustration {
+  animation: 10s linear infinite jumpTwo;
+  
+}
+
+.feature-post{
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+
+}
+.icon-feature{
+  box-shadow: -9px -3px 32px -7px rgba(0,0,0,0.61);
+-webkit-box-shadow: -9px -3px 32px -7px rgba(0,0,0,0.61);
+-moz-box-shadow: -9px -3px 32px -7px rgba(0,0,0,0.61);
+}
+.services-content-main{
+  font-size: 16px;
+  font-weight: 800;
+}

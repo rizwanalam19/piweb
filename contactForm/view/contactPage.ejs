@@ -1,0 +1,114 @@
+ <%- include('../../templates/components/header.ejs'); %>
+
+ <div class="text-center py-5">
+   <p class="text-danger h1 ">
+     Contact Us</p>
+   <hr class="divider bg-madison pr-5">
+ </div>
+ <div class="container">
+
+   <div class="row">
+
+     <div class="col-lg-6 py-4 pt-5 mt-5">
+       <div class="container-fluid">
+         <div class="row">
+           <div class="col-4 text-center">
+             <i class="fas fa-location-dot text-danger fa-2x"></i>
+           </div>
+           <div class="col-8">
+             <p class="">
+               1/G Khudiram Bose Sarani, Saltee Plaza, <br>
+               6th Floor, No 608-M23, <br>
+               Near Nagerbazar, Kolkata - 700080.
+             </p>
+           </div>
+         </div>
+         <br>
+         <div class="row">
+           <div class="col-4 text-center">
+             <i class="fas fa-phone text-danger fa-2x"></i>
+           </div>
+           <div class="col-8">
+             <p class="">
+               +91 9163 267 509 <br>
+               +91 9831 121
+             </p>
+           </div>
+         </div>
+         <br>
+         <div class="row">
+           <div class="col-4 text-center">
+             <i class="far fa-envelope-open text-danger fa-2x"></i>
+           </div>
+           <div class="col-8">
+             <p class="">
+               support@piweb.co.in
+             </p>
+           </div>
+         </div>
+       </div>
+
+     </div>
+     <div class="col-lg-6">
+       <div class="card p-5">
+         <form method="post" action="/user/alldetails">
+           <!-- 2 column grid layout with text inputs for the first and last names -->
+           <div class="form-outline mb-4">
+             <div class="">
+               <div class="form-outline">
+                 <input name="Name" type="text" class="form-control" />
+                 <label class="form-label" for="form6Example1">Name</label>
+               </div>
+             </div>
+
+           </div>
+
+           <!-- Text input -->
+           <div class="form-outline mb-4">
+             <input name="company" type="text" id="form6Example3" class="form-control" />
+             <label class="form-label" for="form6Example3">Company name</label>
+           </div>
+
+           <!-- Text input -->
+           <div class="form-outline mb-4">
+             <input name="address" type="text" id="form6Example4" class="form-control" />
+             <label class="form-label" for="form6Example4">Address</label>
+           </div>
+
+           <!-- Email input -->
+           <div class="form-outline mb-4">
+             <input name="Email" type="email" id="form6Example5" class="form-control" />
+             <label class="form-label" for="form6Example5">Email</label>
+           </div>
+
+           <!-- Number input -->
+           <div class="form-outline mb-4">
+             <input name="Phone" type="number" id="form6Example6" class="form-control" />
+             <label class="form-label" for="form6Example6">Phone</label>
+           </div>
+
+           <!-- Message input -->
+           <div class="form-outline mb-4">
+             <textarea name="other" class="form-control" id="form6Example7" rows="4"></textarea>
+             <label class="form-label" for="form6Example7">Additional information</label>
+           </div>
+           <div class="g-recaptcha" id="rcaptcha" data-sitekey="site key"></div>
+           <span id="captcha" style="color:rgb(207, 121, 121)" /></span> <!-- this will show captcha errors -->
+
+           <!-- Submit button -->
+           <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+         </form>
+       </div>
+
+     </div>
+   </div>
+   <div class="pt-3">
+     <iframe
+       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11887.512018706519!2d-87.64689674974451!3d41.852452589908836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880e2c6094f0e2f3%3A0xd6ba620cfbe60bb1!2sChinatown%2C%20Chicago%2C%20IL%2060616%2C%20USA!5e0!3m2!1sen!2sin!4v1694432052487!5m2!1sen!2sin"
+       width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+       referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+   </div>
+ </div>
+
+ <%- include('../../templates/components/footer.ejs'); %>
