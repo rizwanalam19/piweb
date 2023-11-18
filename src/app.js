@@ -1,8 +1,9 @@
+require("dotenv").config();
 const express = require('express');
 const cors = require('cors');
 const ejs = require("ejs");
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 const path = require("path");
 app.use(express.json());
 const user_details = require("../routes/contactForm");
