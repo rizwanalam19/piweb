@@ -12,39 +12,41 @@ const static_path = path.join(__dirname, "../public");
 app.set("view engine", "ejs");
 var bodyParser = require("body-parser");
 const partial_path = path.join(__dirname, "../templates/components");
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({
+  extended: false
+}));
 
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 app.use(express.static(static_path));
 app.use(cors());
 
-// app.get('/', (req, res) =>{
-//     res.send("hello World");
-// });
 app.get('/contact', (req, res) => {
-    res.render('../contactForm/view/contactPage.ejs');
-  });
+  res.render('../contactForm/view/contactPage.ejs');
+});
 
-  app.get('/',(req,res)=>{
-    res.render('../home/view/home.ejs');
-  })
+app.get('/', (req, res) => {
+  res.render('../home/view/home.ejs');
+})
 app.use("/user", user_details);
 
-app.get('/about',(req, res)=>{
+app.get('/about', (req, res) => {
   res.render('../Aboutus/view/about.ejs');
 });
-app.get('/seo',(req, res)=>{
-res.render('../services/seo/view/seo.ejs');
+app.get('/seo', (req, res) => {
+  res.render('../services/seo/view/seo.ejs');
 });
-app.get('/webdev',(req, res)=>{
+app.get('/webdev', (req, res) => {
   res.render('../services/webdesign/view/webdesign.ejs');
-  });
-  app.get('/social-media-marketing-in-kolkata',(req, res)=>{
-    res.render('../services/marketing/view/smm.ejs');
-    }); app.get('/ecommerece',(req, res)=>{
-      res.render('../services/ecommerce/view/ecom.ejs');
-      });
+});
+app.get('/social-media-marketing-in-kolkata', (req, res) => {
+  res.render('../services/marketing/view/smm.ejs');
+});
+app.get('/ecommerece', (req, res) => {
+  res.render('../services/ecommerce/view/ecom.ejs');
+});
 
-app.listen(port, ()=>{
-    console.log("App is running at port " +port);
+app.listen(port, () => {
+  console.log("App is running at port " + port);
 });
